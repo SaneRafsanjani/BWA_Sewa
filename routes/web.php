@@ -13,7 +13,7 @@ Route::get('/details/{product:slug}', [FrontController::class,'details'])->name(
 
 Route::get('/booking/{product:slug}', [FrontController::class,'booking'])->name('front.booking');
 
-Route::get('/booking/{product:slug}/save', [FrontController::class,'booking_save'])->name('front.booking.save');
+Route::get('/booking/{product:slug}/save', [FrontController::class,'booking_save'])->name('front.booking_save');
 
 Route::get('/success-booking/{transaction}', [FrontController::class,'success_booking'])->name('front.success.booking');
 
